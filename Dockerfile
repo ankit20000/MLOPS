@@ -3,7 +3,7 @@ FROM python:3.9
 WORKDIR /app
 
 COPY app/app.py .
-COPY model/model.pkl ./model/model.pkl
+COPY app/model.pkl ./app/model.pkl
 
 RUN pip install flask joblib scikit-learn
 
